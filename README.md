@@ -1,9 +1,6 @@
 # Hangman
 Group Members:
-  Bethany Low
-  Chan Yi Juan
-  Elton Goh
-  Giorgio Canalella
+  Bethany Low, Chan Yi Juan, Elton Goh, Giorgio Canalella
   
   Planning
     Milestones & Timeline
