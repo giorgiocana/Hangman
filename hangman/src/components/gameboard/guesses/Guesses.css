@@ -1,0 +1,13 @@
+.Guesses {
+  color: red; 
+  font-weight: bold;
+}
+
+.WrongGuess {
+  margin: 50px;
+}
+
+.WrongGuess s {
+  margin: 5px;
+  opacity: 50%;
+}
