@@ -5,7 +5,7 @@ import Input from './input/Input.js';
 import Guesses from './guesses/Guesses.js';
 
 const Gameboard = () => {
-	const word = "Cedric Diggory".toLowerCase();
+	const word = "Random Word".toLowerCase();
 	const [chances, setChances] = useState(10);
 	
 	useEffect(() => {
@@ -28,7 +28,7 @@ const Gameboard = () => {
 	});
 	return (
 		<div className="Gameboard">
-			<Hangman word={word}/>
+			<Hangman chances={chances}/>
 			<Input word={word} chances={chances}/>
 			<Guesses />
 		</div>
