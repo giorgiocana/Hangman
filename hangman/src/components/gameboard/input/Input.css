@@ -7,28 +7,26 @@ table.Input td.Character {
   padding: 0;
   height: 40px;
   width: 35px;
-  border: 0;
-  border-bottom: 2px solid slategray;
-  color: white;
   font-size: 40px;
   font-weight: bold;
+}
+
+table.Input td.Guessed {
+  border-bottom: 2px;
+  color: white;
+}
+
+table.Input td.Hidden {
+  color: transparent;
+  border-bottom: 2px solid slategray;
 }
 
 table.Input td.Space { 
   margin: 0px 2px;
   width: 15px;
-  background-color: transparent;
-  border: 0;
 }
 
-table.Input td.CharacterRevealed { 
-  padding: 0;
-  height: 40px;
-  width: 35px;
-  border: 0;
-  border-bottom: 2px solid slategray;
-  color: white;
+table.Input td.Answer {
+  border-bottom: 2px;
   opacity: 50%;
-  font-size: 40px;
-  font-weight: bold;
 }

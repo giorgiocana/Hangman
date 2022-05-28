@@ -17,7 +17,7 @@ const Hangman = ({chances}) => {
 		leftArm, rightArm, leftLeg, rightLeg];
 
 	const hangmanDrawing = drawingOrder.map((step, i) => {
-		return i <= 10 - chances
+		return i < 10 - chances
 			? <div key={i}>{step}</div>
 			: <div key={i}></div>;
 	});	

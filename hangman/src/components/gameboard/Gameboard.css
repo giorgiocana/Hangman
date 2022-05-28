@@ -1,8 +1,8 @@
 .Gameboard {
   width: 700px;
   padding: 50px 20px;
- 	border-radius: 5px;
-  border: solid slategray;
+ 	/*border-radius: 5px;
+  border: solid slategray;*/
 }
 
 @media (max-width: 960px) {
