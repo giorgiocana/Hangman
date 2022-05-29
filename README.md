@@ -32,12 +32,19 @@ Since Hangman is a relatively small project, we decided that this would be a gre
 ### Snippet of Interesting Code:
   
 ## Project Video:
- 
+![hangman video] (/hangman/media/hangman-recording.gif)
+
 ## Project Screenshots:
+![hangman in progress] (/hangman/media/hangman-inprogress.png)
+![hangman success] (/hangman/media/hangman-success.png)
+![hangman failure] (/hangman/media/hangman-failure.png)
+
+
  
 ## Project Retrospective:
 
 ###   What went well:
+We were able to successfully create the hangman game with full functionality
 
 ###   What can be improved:
 
