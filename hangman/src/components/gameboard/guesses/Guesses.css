@@ -5,6 +5,12 @@
   justify-content: center;
 }
 
+@media (max-width: 960px) {
+  .Guesses {
+    display: none;
+  }
+}
+
 .GuessRow {
   display: flex;
   justify-content: center;
