@@ -6,6 +6,7 @@
 
 table.Input {
   height: 40px;
+  padding: 0px 10px;
 }
 
 table.Input td.Character {
@@ -33,4 +34,13 @@ table.Input td.Space {
 table.Input td.Answer {
   border-bottom: 2px;
   opacity: 50%;
+}
+
+@media (max-width: 960px) {
+  table.Input td.Character {
+    padding: 0;
+    width: 30px;
+    font-size: 30px;
+    font-weight: bold;
+  }
 }

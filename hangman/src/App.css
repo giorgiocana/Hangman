@@ -5,6 +5,7 @@
   font-size: calc(10px + 2vmin);
   font-family:Helvetica, Arial, sans-serif;
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -31,4 +32,14 @@ h3 {
 
 h1 {
   margin: 10px;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    display: none;
+  }
+
+  h3 {
+    display: none;
+  }
 }

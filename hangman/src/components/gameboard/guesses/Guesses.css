@@ -5,10 +5,10 @@
   justify-content: center;
 }
 
-@media (max-width: 960px) {
-  .Guesses {
-    display: none;
-  }
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
 }
 
 .GuessRow {
@@ -19,7 +19,7 @@
 .Guess {
   font-size: larger;
   font-weight: bold;
-  margin: 5px 15px;
+  padding: 5px 15px;
 }
 
 .Guesses.Inactive {
@@ -33,4 +33,21 @@
 .Guess.Valid {
   color: springgreen;
   opacity: 60%;
+}
+
+@media (max-width: 960px) {
+  .Guesses {
+    padding-top: 50px;
+  }
+
+  .GuessRow {
+    padding: 0px 10px;
+    max-width: 940px;
+    min-width: 370px;
+  }
+
+  .Guess {
+    padding: 5px 10px;
+    font-size: x-large;
+   }
 }

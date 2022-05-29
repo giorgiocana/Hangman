@@ -1,4 +1,5 @@
 import './Guesses.css';
+import { useEffect, useRef } from 'react';
 
 const Guesses = ({wrongGuesses, guesses, chances}) => {
 	const firstRow = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'];
@@ -8,10 +9,14 @@ const Guesses = ({wrongGuesses, guesses, chances}) => {
 	const displayWrongGuesses = (row) => {
 		return row.map((char, i) => {
 			return wrongGuesses.includes(char)
-					? <div className="Guess Invalid" key={i}>{char.toUpperCase()}</div>
+					? <button className="Guess Invalid" key={i} disabled>{char.toUpperCase()}</button>
 					: guesses.includes(char)
-							? <div className="Guess Valid" key={i}>{char.toUpperCase()}</div>
-							: <div className="Guess" key={i}>{char.toUpperCase()}</div>;
+							? <button className="Guess Valid" key={i} disabled>{char.toUpperCase()}</button>
+							: <button className="Guess" key={i} 
+									onClick={() => {
+										window.dispatchEvent(new KeyboardEvent('keyup', {
+											key: char,
+										}))}}>{char.toUpperCase()}</button>;
 		})};
 
 	const opacity = chances > 0 ? "Guesses" : "Guesses Inactive";
