@@ -4,10 +4,12 @@ import Hangman from './hangman/Hangman.js';
 import Input from './input/Input.js';
 import Guesses from './guesses/Guesses.js';
 
+const words = ['tiktok', 'javascript', 'stylesheet', 'singapore', 'summer'];
+	let selectedWord = words[Math.floor(Math.random() * words.length)];
+
 const Gameboard = () => {
-	words = ['tiktok', 'javascript', 'stylesheet', 'singapore', 'summer'];
-	let selectedWord = words[Math.floor(Math.random() * words.length)]
-	const word = selectedWord.toLowerCase();	const [wordLeft, setWordLeft] = useState(word.replaceAll(" ", ""));
+	const word = selectedWord.toLowerCase();
+	const [wordLeft, setWordLeft] = useState(word.replaceAll(" ", ""));
 	const [chances, setChances] = useState(10);
 	const [guesses, setGuesses] = useState([]);
 	const [wrongGuesses, setWrongGuesses] = useState([]);
