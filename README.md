@@ -44,8 +44,10 @@ Since Hangman is a relatively small project, we decided that this would be a gre
 ## Project Retrospective:
 
 ###   What went well:
-We were able to successfully create the hangman game with full functionality
+We were able to successfully create the hangman game with full functionality.
 
 ###   What can be improved:
+Since our interface is rather static right now, we feel like a key improvement could be to add better and more interactive animations to add to the engagement of the game and make it more fun. Additionally, we could incorporate a "hints" function into the game that provides the user with context about the word to be guessed. Alternatively, we could also allow users to pick a category of words before starting the game. Finally, we could incorporate a multiplayer element to allow multiple users to play together at the same time.
 
 ###   What will we commit to improve in the next project:
+As we feel like a good user interface is key to the success and enjoyment of the hangman game, we will commit to improving the interface of the game in the next iteration of the project. This will look like adding more animations and emotions to the man who is about to be hanged. Doing so increases the stakes of the game as the user will make a larger effort to guess the word and save the man. 
