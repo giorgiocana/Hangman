@@ -1,9 +1,6 @@
 import './Input.css';
-import { useState, useEffect } from 'react';
 
 const Input = ({word, chances, guesses}) => {
-
-  const [success, setSuccess] = useState(false);
 
   const userInput = word.split("").map((char, i) => {
     return char === " "
@@ -16,11 +13,13 @@ const Input = ({word, chances, guesses}) => {
   });
 
 	return (
-		<table className="Input">
-      <tbody>
-        <tr>{userInput}</tr>
-      </tbody>
-    </table>
+    <div className="Input">
+      <table className="Input">
+        <tbody>
+          <tr>{userInput}</tr>
+        </tbody>
+      </table>
+    </div>
 	);
 };
 

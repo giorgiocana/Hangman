@@ -9,17 +9,17 @@ const Gameboard = () => {
 	const [wordLeft, setWordLeft] = useState(word.replaceAll(" ", ""));
 	const [chances, setChances] = useState(10);
 	const [guesses, setGuesses] = useState([]);
+	const [wrongGuesses, setWrongGuesses] = useState([]);
 	
 	useEffect(() => {
 		const handleKeyUp = (e) => {
 			if (e.key.length === 1 && e.key.match(/[a-zA-Z]/) && !guesses.includes(e.key)) {	
 					setGuesses(guesses.concat(e.key));
 				if (!word.includes(e.key)) {
+					setWrongGuesses(wrongGuesses.concat(e.key).sort());
 					setChances(chances - 1);
 				} else {
 					setWordLeft(wordLeft.replaceAll(e.key, ""));
-					console.log("word left: " + wordLeft);
-					console.log("correct guess!");	
 				}
 			}
 		};
@@ -35,9 +35,11 @@ const Gameboard = () => {
 	
 	return (
 		<div className="Gameboard">
-			<Hangman chances={chances}/>
-			<Input word={word} chances={chances} guesses={guesses}/>
-			<Guesses />
+			<div className="HangmanInput">
+				<Hangman chances={chances}/>
+				<Input word={word} chances={chances} guesses={guesses}/>
+			</div>
+			<Guesses wrongGuesses={wrongGuesses} guesses={guesses} chances={chances}/>
 		</div>
 	);
 };

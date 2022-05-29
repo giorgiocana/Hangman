@@ -1,11 +1,15 @@
 .Input {
-  margin: auto;
   border-spacing: 7px;
+  display: flex;
+  align-items: center;
+}
+
+table.Input {
+  height: 40px;
 }
 
 table.Input td.Character {
   padding: 0;
-  height: 40px;
   width: 35px;
   font-size: 40px;
   font-weight: bold;

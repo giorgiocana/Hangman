@@ -1,8 +1,10 @@
 .Gameboard {
-  width: 700px;
-  padding: 50px 20px;
- 	/*border-radius: 5px;
-  border: solid slategray;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.HangmanInput {
+  display: flex;
 }
 
 @media (max-width: 960px) {

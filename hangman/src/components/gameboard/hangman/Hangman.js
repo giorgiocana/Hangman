@@ -12,9 +12,15 @@ const Hangman = ({chances}) => {
 	const rightArm = <hr id="RightArm"></hr>;
 	const leftLeg = <hr id="LeftLeg"></hr>;
 	const rightLeg = <hr id="RightLeg"></hr>;
+	const eyes = (<div>
+		<hr className="LeftEye Eye1"></hr>
+		<hr className="LeftEye Eye2"></hr>
+		<hr className="RightEye Eye1"></hr>
+		<hr className="RightEye Eye2"></hr>
+	</div>);
 
-	const drawingOrder = [land, stand, bar, noose, head, body,
-		leftArm, rightArm, leftLeg, rightLeg];
+	const drawingOrder = [stand, bar, noose, head, body,
+		leftArm, rightArm, leftLeg, rightLeg, eyes];
 
 	const hangmanDrawing = drawingOrder.map((step, i) => {
 		return i < 10 - chances
@@ -24,6 +30,7 @@ const Hangman = ({chances}) => {
 
 	return (
 		<div className="Hangman">
+			{land}
 			{hangmanDrawing}
 		</div>
 	);

@@ -1,6 +1,7 @@
 .Hangman {
 	height: 350px;
-	margin: 50px 0px;
+	width: 350px;
+	margin: 50px;
 	position: relative;
 }
 
@@ -26,20 +27,19 @@ hr.Vertical {
 
 hr#Land {
 	bottom: 0px;
-	left: 25%;
-	width: 50%;
+	width: 100%;
 }
 
 hr#Stand {
 	bottom: 0%;
-	left: 35%;
+	left: 20%;
 	height: 100%;
 }
 
 hr#Bar {
 	bottom: 100%;
-	left: 35%;
-	width: 30%;
+	left: 20%;
+	width: 60%;
 }
 
 hr#Noose {
@@ -50,43 +50,63 @@ hr#Noose {
 
 hr#Head {
 	bottom: 63%;
-	left: 45%;
-	width: 10%;
+	left: 40%;
+	width: 20%;
 	height: 20%;
 	border-radius: 50%;
 	border-width: 4px;
 }
 
 hr#Body {
-	bottom: 37%;
+	bottom: 39%;
 	left: 50%;
 	height: 25%;
 }
 
 hr#LeftArm {
 	bottom: 53%;
-	left: 43.3%;
-	width: 10%;
+	left: 36%;
+	width: 20%;
 	transform: rotate(110deg);
 }
 
 hr#RightArm {
 	bottom: 53%;
-	left: 46.7%;
-	width: 10%;
+	left: 44%;
+	width: 20%;
 	transform: rotate(70deg);
 }
 
 hr#LeftLeg {
-	bottom: 27%;
-	left: 43.3%;
-	width: 10%;
+	bottom: 30%;
+	left: 36%;
+	width: 20%;
 	transform: rotate(110deg);
 }
 
 hr#RightLeg {
-	bottom: 27%;
-	left: 46.7%;
-	width: 10%;
+	bottom: 30%;
+	left: 44%;
+	width: 20%;
 	transform: rotate(70deg);
+}
+
+hr.Eye1 {
+	transform: rotate(50deg);
+}
+
+hr.Eye2 {
+	transform: rotate(120deg);
+}
+
+hr.LeftEye {
+	bottom: 75%;
+	left: 42%;
+	width: 9%;
+}
+
+hr.RightEye {
+	bottom: 74%;
+	left: 51%;
+	width: 8%;
 }

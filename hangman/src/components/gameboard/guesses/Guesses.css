@@ -1,13 +1,30 @@
 .Guesses {
-  color: red; 
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.GuessRow {
+  display: flex;
+  justify-content: center;
+}
+
+.Guess {
+  font-size: larger;
   font-weight: bold;
+  margin: 5px 15px;
 }
 
-.WrongGuess {
-  margin: 50px;
+.Guesses.Inactive {
+  opacity: 20%;
 }
 
-.WrongGuess s {
-  margin: 5px;
-  opacity: 50%;
+.Guess.Invalid {
+  opacity: 20%;
+}
+
+.Guess.Valid {
+  color: springgreen;
+  opacity: 60%;
 }
